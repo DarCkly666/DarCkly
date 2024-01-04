@@ -3,17 +3,20 @@ import React from 'react'
 
 export const Navbar = () => {
   return (
-    <nav className='w-full md:max-w-5xl md:mx-auto flex py-5 justify-between items-center px-10 md:px-0'>
+    <nav className="w-full md:max-w-5xl md:mx-auto flex py-5 justify-between items-center px-10 md:px-0">
       <Link href="/">DarCkly</Link>
       <ul className="flex gap-5">
         <li>
-          <Link href="/">Home</Link>
+          <a href="#about">About</a>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#footer">Contact</a>
         </li>
       </ul>
     </nav>
